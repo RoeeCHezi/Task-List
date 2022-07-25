@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div id="errors-and-notepad">
+
+        <div id="errors">
+
+        </div>
+
+
+        <div id="notepad">
+            <div class="title">
+                <h1>
+                    <pre>Task      List</pre>
+                </h1>
+            </div>
+
+            <img src="pngscoreboard.png" width="600px">
+
+            <form>
+                <textarea id="task-log" placeholder="Enter New Task..."></textarea>
+                <input type="date" id="date-log">
+                <input type="time" id="time-log">
+                <input id='clearButton' type="reset" onclick="onResetClick()" value="Clear">
+            </form>
+
+            <input id='saveButton' type="button" onclick="onSaveClick()" value="Save">
+
+        </div>
+
+    </div>
+
+    <div id="notes">
+
+        
+        <!-- <div id="note1" class="note">
+            <img class="redcard" src='redcard.png'>
+            <p class="note-task">Roee Hezi</p>
+            <p class="note-date">3/1/22</p>
+            <p class="note-time">02:45</p>
+            <button class="erase-button" onclick="deleteNoteOnClick()">
+                <span class="erase-icon">X</span>
+            </button>
+
+        </div> -->
+
+    </div>
+
+
+    <script src="main.js"></script>
+
+</body>
+
+
+
+
+</html>

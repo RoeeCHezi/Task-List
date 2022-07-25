@@ -1,0 +1,197 @@
+body {
+  
+  background-image: url('grassBackground.jpg');
+  background-size: 100vw 100vh;
+  background-size: auto;
+  background-repeat: repeat;
+}
+
+#notepad{
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.title {
+  display: inline-block;
+  position: absolute;
+  transform: translate(25%, 40%);
+  text-align: center;
+  color: rgb(172, 39, 39);
+  font-size: xx-large;
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: 0 0 5px black, 0 0 5px black, 0 0 5px black, 0 0 5px black;
+}
+
+#saveButton {
+  display: inline-block;
+  position: absolute;
+  top: 512px;
+  left: 110px;
+  transform: translate(125%, -50%);
+  background-color: gray;
+  color: black;
+  font-size: 14px;
+  padding: 8px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+#clearButton {
+  display: inline-block;
+  position: absolute;
+  top: 512px;
+  left: 139px;
+  transform: translate(250%, -50%);
+  background-color: gray;
+  color: black;
+  font-size: 14px;
+  padding: 8px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+#task-log{
+  display: inline-block;
+  position: absolute;
+  height: 31%;
+  width: 77%;
+  top: 355px;
+  left: 1244px;
+  line-height: 45px;
+  transform: translate(-250%, -50%);
+  background-color: transparent;
+  color: white;
+  font-size: 20px;
+  border: transparent;
+  cursor: text;
+  border-style: solid;
+  resize: none;
+  outline: none;
+}
+
+#date-log{
+  display: inline-block;
+  position: absolute;
+  margin-top: -138px;
+  margin-left: -221px;
+  transform: translate(250%, -50%);
+  border-color: black;
+  cursor: pointer;
+}
+
+#time-log{
+  display: inline-block;
+  position: absolute;
+  margin-top: -138px;
+  margin-left: 153px;
+  transform: translate(250%, -50%);
+  border-color: black;
+  cursor: pointer;
+}
+
+.note{
+  display: inline-block;
+  position: relative;
+  animation: fadeInAnimation ease 3s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+}  
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.note:hover >.erase-button{
+  opacity: 1;
+}
+
+.note-task{
+  display: inline-block;
+  position: absolute;
+  height: 145px;
+  left: -129%;
+  top: 21%;
+  width: 158px;
+  transform: translate(250%, -50%);
+  overflow-y: auto;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  /* border: black; */
+  /* border-style: solid; */
+}
+
+.note-date{
+  display: inline-block;
+  position: absolute;
+  left: -81%;
+  top: 58%;
+  width: 99px;
+  transform: translate(250%, -50%);
+  /* border: black; */
+  /* border-style: solid; */
+}
+
+.note-time{
+  display: inline-block;
+  position: absolute;
+  left: -74%;
+  top: 65%;
+  width: 99px;
+  transform: translate(250%, -50%);
+  /* border: black; */
+  /* border-style: solid; */
+}
+
+#error{
+  display: inline-block;
+  position: absolute;
+  height: 145px;
+  left: -230px;
+  top: 44%;
+  width: 190px;
+  transform: translate(250%, -50%);
+}
+
+#errors-paragraph{
+  display: inline-block;
+  position: absolute;
+  background-color: rgb(218, 211, 18);
+  white-space: nowrap;
+  height: 118px;
+  left: -255px;
+  top: 50%;
+  width: 190px;
+  transform: translate(250%, -50%);
+  border-radius: 50px;
+  padding-left: 3px;
+  padding-top: 21px;
+  padding-bottom: 1px;
+  padding-right: 5px;
+  text-align: center;
+}
+
+.erase-button{
+  display: inline-block;
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  top: 12px;
+  left: 8px;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.erase-button:hover{
+  background-color: yellow;
+}
